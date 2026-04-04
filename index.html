@@ -19,7 +19,7 @@
 <!-- Open Graph (WhatsApp, LinkedIn, Facebook previews) -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="MGA — Mohammad Gharib Ali Al Tamimi Contracting Est.">
-<meta property="og:description" content="Leading general contractor in Saudi Arabia. Civil construction, road works, waterproofing, MEP, steel structures & more. Contact Mohammad K.: 0597766887">
+<meta property="og:description" content="Leading general contractor in Saudi Arabia. Civil construction, road works, waterproofing, MEP, steel structures & more. Contact Mohammad K.: +966 56 595 0560">
 <meta property="og:url" content="https://mga-altamimi.com/">
 <meta property="og:locale" content="en_SA">
 <meta property="og:locale:alternate" content="ar_SA">
@@ -38,7 +38,7 @@
   "alternateName": "MGA Al Tamimi",
   "description": "Leading general contractor in Saudi Arabia specializing in civil construction, road asphalt, waterproofing, steel structures, MEP works, and heavy equipment supply.",
   "url": "https://mga-altamimi.com/",
-  "telephone": "+966597766887",
+  "telephone": "+966565950560",
   "email": "info@mga-est.com",
   "address": {
     "@type": "PostalAddress",
@@ -54,7 +54,7 @@
   "foundingLocation": "Al Jubail, Saudi Arabia",
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+966597766887",
+    "telephone": "+966565950560",
     "contactType": "sales",
     "availableLanguage": ["English", "Arabic"]
   }
@@ -63,8 +63,69 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box}
 :root{--navy:#0B1F3A;--gold:#C09436;--gold-l:#E8C46A;--cream:#F8F5EF;--gray:#6B7280}
-html{scroll-behavior:smooth;-webkit-overflow-scrolling:touch}
--webkit-text-size-adjust:100%;body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--navy);overflow-x:hidden}
+html{scroll-behavior:smooth;-webkit-overflow-scrolling:touch;
+-webkit-text-size-adjust:100%;}body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--navy);overflow-x:hidden}
+/* Pro Dark Card & Button Styles */
+.trading-section { background-color: #0B1F3A; }
+
+.svc-card.dark-pro {
+    background: linear-gradient(145deg, rgba(21, 37, 62, 0.9), rgba(11, 31, 58, 0.95));
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 40px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.svc-card.dark-pro:hover {
+    transform: translateY(-10px);
+    border-color: rgba(241, 196, 15, 0.4);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.svc-icon-box {
+    width: 50px; height: 50px;
+    background: rgba(241, 196, 15, 0.1);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    color: #f1c40f; margin-bottom: 20px;
+}
+
+.svc-card.dark-pro h3 { color: #fff; font-size: 1.3rem; margin-bottom: 5px; }
+.ar-sub { font-family: 'Amiri', serif; color: #f1c40f; font-size: 1.2rem; margin-bottom: 15px; display: block; }
+.svc-card p { color: #a0aec0; font-size: 0.95rem; margin-bottom: 25px; flex-grow: 1; }
+
+/* Request Quote Button */
+.btn-quote {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgba(241, 196, 15, 0.3);
+    color: #f1c40f;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-quote:hover {
+    background: #f1c40f;
+    color: #0b1f3a;
+}
+
+.badge-saudi {
+    position: absolute; top: 20px; right: 20px;
+    background: rgba(241, 196, 15, 0.1);
+    color: #f1c40f; font-size: 9px; font-weight: 700;
+    padding: 4px 10px; border-radius: 20px;
+    border: 1px solid rgba(241, 196, 15, 0.2);
+}
 
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(11,31,58,0.97);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:space-between;padding:0 4%;height:68px;border-bottom:1px solid rgba(192,148,54,0.25)}
 .nav-left{display:flex;align-items:center;gap:14px}
@@ -185,14 +246,70 @@ footer{background:#060D1A;padding:36px 4%;border-top:1px solid rgba(192,148,54,0
 .reveal-delay-3{transition-delay:0.3s}
 .reveal-delay-4{transition-delay:0.4s}
 @media(max-width:800px){
-  #hamburger{display:block !important}
+  
   .nav-links{display:none !important}
   #nav-cta-desktop{display:none !important}
 }
 @media(min-width:801px){
-  #hamburger{display:none !important;min-width:44px;min-height:44px}
+  
   #nav-cta-desktop{display:inline-flex !important}
   #mobile-menu{display:none !important}
+}
+
+/* Pure CSS Hamburger */
+#nav-toggle { display:none }
+.hamburger-label {
+  display:none;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+  padding:6px;
+  z-index:200;
+}
+.hamburger-label span {
+  display:block;
+  width:24px;
+  height:2px;
+  background:#fff;
+  border-radius:2px;
+  transition:all 0.3s;
+}
+#nav-toggle:checked ~ .hamburger-label span:nth-child(1){ transform:translateY(7px) rotate(45deg) }
+#nav-toggle:checked ~ .hamburger-label span:nth-child(2){ opacity:0 }
+#nav-toggle:checked ~ .hamburger-label span:nth-child(3){ transform:translateY(-7px) rotate(-45deg) }
+.css-mobile-menu {
+  display:none;
+  position:fixed;
+  top:68px;
+  left:0;
+  right:0;
+  background:rgba(11,31,58,0.98);
+  z-index:99;
+  flex-direction:column;
+  padding:20px 4%;
+  border-bottom:1px solid rgba(192,148,54,0.2);
+}
+#nav-toggle:checked ~ .css-mobile-menu { display:flex !important }
+.css-mobile-menu a {
+  color:rgba(255,255,255,0.85);
+  font-family:'Barlow',sans-serif;
+  font-size:15px;
+  font-weight:500;
+  text-decoration:none;
+  padding:13px 0;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  display:block;
+}
+.css-mobile-menu a:last-child { color:var(--gold-l); border-bottom:none }
+@media(max-width:800px){
+  .hamburger-label { display:flex !important }
+  .nav-links { display:none !important }
+  #nav-cta-desktop { display:none !important }
+}
+@media(min-width:801px){
+  .hamburger-label { display:none !important }
+  .css-mobile-menu { display:none !important }
+  #nav-cta-desktop { display:inline-flex !important }
 }
 </style>
 
@@ -201,10 +318,10 @@ footer{background:#060D1A;padding:36px 4%;border-top:1px solid rgba(192,148,54,0
   // EASY CONTACT CONFIG — edit here to update
   // ============================================
   const MGA = {
-    phone1:    "0597766887",
-    phone2:    "0579817995",
-    email:     "info@mga-est.com",
-    whatsapp:  "966597766887",   // international format, no +
+    phone1: "+966 56 595 0560",
+    phone2: "+966 57 981 7995",
+    email: "info@mga-est.com",
+    whatsapp: "966565950560",   // international format, no +
     contact:   "Mohammad K.",
     location:  "Al Jubail, Kingdom of Saudi Arabia"
   };
@@ -255,18 +372,21 @@ footer{background:#060D1A;padding:36px 4%;border-top:1px solid rgba(192,148,54,0
     <a href="#contact">Contact</a>
   </div>
   <a class="nav-contact" href="#contact" id="nav-cta-desktop">Get in Touch</a>
-  <button id="hamburger" style="display:none;background:none;border:none;cursor:pointer;padding:4px" aria-label="Menu">
-    <svg viewBox="0 0 24 24" style="width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-  </button>
-</nav>
-<div id="mobile-menu" style="display:none;position:fixed;top:68px;left:0;right:0;background:rgba(11,31,58,0.98);z-index:99;flex-direction:column;padding:20px 4%;border-bottom:1px solid rgba(192,148,54,0.2)">
-  <a href="#about" style="color:rgba(255,255,255,0.8);font-size:15px;font-weight:500;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:block">About</a>
-  <a href="#services" style="color:rgba(255,255,255,0.8);font-size:15px;font-weight:500;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:block">Services</a>
-  <a href="#projects" style="color:rgba(255,255,255,0.8);font-size:15px;font-weight:500;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:block">Projects</a>
-  <a href="#clients" style="color:rgba(255,255,255,0.8);font-size:15px;font-weight:500;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:block">Clients</a>
-  <a href="#why-us" style="color:rgba(255,255,255,0.8);font-size:15px;font-weight:500;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:block">Why Us</a>
-  <a href="#contact" style="color:var(--gold-l);font-size:15px;font-weight:600;text-decoration:none;padding:12px 0;display:block">Contact</a>
+  
+<input type="checkbox" id="nav-toggle" style="display:none">
+<label class="hamburger-label" for="nav-toggle">
+  <span></span><span></span><span></span>
+</label>
+<div class="css-mobile-menu">
+  <a href="#about" onclick="document.getElementById('nav-toggle').checked=false">About</a>
+  <a href="#services" onclick="document.getElementById('nav-toggle').checked=false">Services</a>
+  <a href="#projects" onclick="document.getElementById('nav-toggle').checked=false">Projects</a>
+  <a href="#clients" onclick="document.getElementById('nav-toggle').checked=false">Clients</a>
+  <a href="#why-us" onclick="document.getElementById('nav-toggle').checked=false">Why Us</a>
+  <a href="#contact" onclick="document.getElementById('nav-toggle').checked=false">Contact</a>
 </div>
+</nav>
+
 
 <section class="hero" id="home">
   <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=80');background-size:cover;background-position:center;opacity:0.18;z-index:0"></div>
@@ -508,7 +628,81 @@ footer{background:#060D1A;padding:36px 4%;border-top:1px solid rgba(192,148,54,0
 
   </div>
 </section>
+<div class="gold-line"></div>
+<section id="trading" class="s-pad trading-section">
+  <div class="c">
+    <div class="sh">
+      <div class="stag">Trading Division</div>
+      <div class="stit stit-w">Material Supply & Technical Services</div>
+      <div class="stit-ar stit-ar-w">توريد المواد والخدمات الفنية</div>
+    </div>
 
+    <div class="svc-grid">
+      <div class="svc-card dark-pro reveal">
+        <span class="badge-saudi">Saudi Made</span>
+        <div class="svc-icon-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>Cable Management</h3>
+        <span class="ar-sub">إدارة الكابلات</span>
+        <p>Supply of Lugs, Glands, Terminations, and Saudi-made Cable Clamps/Cleats for major power projects.</p>
+        <a href="#contact" class="btn-quote">Request a Quote</a>
+      </div>
+
+      <div class="svc-card dark-pro reveal">
+        <div class="svc-icon-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
+        </div>
+        <h3>Piping & Containment</h3>
+        <span class="ar-sub">أنظمة الأنابيب والاحتواء</span>
+        <p>Full range of PVC, HDPE, and Corrugated pipes with heavy-duty C-Channel supports.</p>
+        <a href="#contact" class="btn-quote">Request a Quote</a>
+      </div>
+
+      <div class="svc-card dark-pro reveal">
+        <div class="svc-icon-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Industrial Safety</h3>
+        <span class="ar-sub">السلامة الصناعية</span>
+        <p>Certified Fire Stop materials, Mastik coatings, and industrial emergency eye wash stations.</p>
+        <a href="#contact" class="btn-quote">Request a Quote</a>
+      </div>
+
+      <div class="svc-card dark-pro reveal">
+        <div class="svc-icon-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M12 7v10M8 7v10M16 7v10"/></svg>
+        </div>
+        <h3>Steel Fabrication</h3>
+        <span class="ar-sub">التصنيع الحديدي</span>
+        <p>Custom steel stairs, bridges, and gratings with high-quality epoxy coating and industrial finishing.</p>
+        <a href="#contact" class="btn-quote">Request a Quote</a>
+      </div>
+
+      <div class="svc-card dark-pro reveal">
+        <span class="badge-saudi">Saudi Made</span>
+        <div class="svc-icon-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3zM9 3v18M15 3v18M3 9h18M3 15h18"/></svg>
+        </div>
+        <h3>Site Infrastructure</h3>
+        <span class="ar-sub">البنية التحتية للمواقع</span>
+        <p>Supply of Saudi-made Portacabins, heavy-duty Steel Doors, and concrete Transformer/RMU bases.</p>
+        <a href="#contact" class="btn-quote">Request a Quote</a>
+      </div>
+
+      <div class="svc-card dark-pro reveal">
+        <span class="badge-saudi">Saudi Made</span>
+        <div class="svc-icon-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+        </div>
+        <h3>Identification Systems</h3>
+        <span class="ar-sub">أنظمة التعريف واللوحات</span>
+        <p>Industrial warning poles, etched name plates, and safety signage boards for industrial sites.</p>
+        <a href="#contact" class="btn-quote">Request a Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
 <div class="gold-line"></div>
 
 <section id="why-us" style="background:var(--navy)">
@@ -619,7 +813,7 @@ footer{background:#060D1A;padding:36px 4%;border-top:1px solid rgba(192,148,54,0
       </div>
       <div class="cinfo-item">
         <div class="cdot"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.38 2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.08-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-        <div><div class="clabel">Phone</div><div class="cval">0597766887</div><div class="cval-sub">0579817995</div></div>
+        <div><div class="clabel">Phone</div><div class="cval">+966 56 595 0560</div><div class="cval-sub">+966 57 981 7995</div></div>
       </div>
       <div class="cinfo-item">
         <div class="cdot"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
@@ -640,39 +834,18 @@ footer{background:#060D1A;padding:36px 4%;border-top:1px solid rgba(192,148,54,0
   <div class="foot-inner">
     <div class="foot-brand">Mohammad Gharib Ali Al Tamimi Cont. Est.</div>
     <div class="foot-cr">C.R.: 2055137542 · VAT: 300076672400003 · © 2025 All Rights Reserved</div>
-    <di
+  </div>
+</footer>
 
 
 
 
 <!-- WhatsApp Button -->
 <style>
-.whatsapp-float{
-  position:fixed;
-  width:60px;
-  height:60px;
-  bottom:30px;
-  right:30px;
-  background-color:#25d366;
-  color:#FFF;
-  border-radius:50px;
-  text-align:center;
-  font-size:30px;
-  box-shadow:2px 2px 3px #999;
-  z-index:100;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-decoration:none;
-  transition:background 0.2s;
-}
-.whatsapp-float:hover{
-  background-color:#20ba5a;
-}
+.wa-float{position:fixed;width:60px;height:60px;bottom:30px;right:30px;background-color:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:2px 2px 10px rgba(0,0,0,0.3);z-index:99999;text-decoration:none;transition:background 0.2s}
+.wa-float:hover{background-color:#20ba5a}
+.wa-float img{width:34px;height:34px}
 </style>
-<a href="https://wa.me/966597766887?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." 
-   class="whatsapp-float" 
-   target="_blank"
-   rel="noopener">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="36" height="36" alt="WhatsApp">
+<a href="https://wa.me/966565950560?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." class="wa-float" <a href="https://wa.me/966565950560?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." class="wa-float" target="_blank" rel="noopener">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 </a>
